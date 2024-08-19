@@ -2,7 +2,7 @@
 
 public static class RedisConfigurationExtensions
 {
-    public static IConfigurationBuilder AddEtcdXml(
+    public static IConfigurationBuilder AddRedisXml(
         this IConfigurationBuilder builder,
         RedisClientOptions redisClientOptions,
         string key

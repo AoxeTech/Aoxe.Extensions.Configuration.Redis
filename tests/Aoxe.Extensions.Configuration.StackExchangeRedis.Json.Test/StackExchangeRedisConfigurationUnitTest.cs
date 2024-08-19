@@ -1,0 +1,27 @@
+namespace Aoxe.Extensions.Configuration.StackExchangeRedis.Json.Test;
+
+public class RedisConfigurationUnitTest
+{
+    [Fact]
+    public void ConfigurationTest()
+    {
+        var configBuilder = new ConfigurationBuilder().AddRedis(
+            new RedisClientOptions("localhost:6379"),
+            "test-json",
+            new JsonFlattener()
+        );
+        var configuration = configBuilder.Build();
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
+    }
+
+    [Fact]
+    public void ConfigurationJsonTest()
+    {
+        var configBuilder = new ConfigurationBuilder().AddRedisJson(
+            new RedisClientOptions("localhost:6379"),
+            "test-json"
+        );
+        var configuration = configBuilder.Build();
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
+    }
+}

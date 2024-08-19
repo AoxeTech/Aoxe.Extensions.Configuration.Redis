@@ -24,6 +24,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configurati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet", "src\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet.csproj", "{211A58E7-A46F-46D5-AFC9-2AD7FA83C85B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.Ini.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Ini.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Ini.Test.csproj", "{4B2F8CD0-6ECB-4F5C-BC4B-008BCBAFB23A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.IniParser.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.IniParser.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.IniParser.Test.csproj", "{0D2A0B68-3C18-4458-A568-98E630DB255D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.Json.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Json.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Json.Test.csproj", "{3127CCB4-E0A5-404E-9D92-885547B898B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.NewtonsoftJson.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.NewtonsoftJson.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.NewtonsoftJson.Test.csproj", "{C284E521-2E0D-4B37-AB1C-1ECC685B7C22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.SharpYaml.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.SharpYaml.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.SharpYaml.Test.csproj", "{D2E441E7-C580-4259-9BE7-B3217B9512C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Test.csproj", "{301FA331-E811-49CD-821B-272A0BA9E5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlet.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlet.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlet.Test.csproj", "{35577886-2193-429E-8D08-9C5B2AFB572C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlyn.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlyn.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlyn.Test.csproj", "{113507B4-C85C-4FD6-BD40-BD163F0D2078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.Xml.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Xml.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Xml.Test.csproj", "{A0625D60-19BF-4C05-B835-DA3E20FB3129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet.Test", "tests\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet.Test.csproj", "{E4E46B0F-7E50-4A76-A3BA-5298ED8D07D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +60,16 @@ Global
 		{78FF5AF4-1288-4873-8E63-F4643FDDD118} = {042378DA-BE8D-4131-824B-7A5A8D8BF55B}
 		{9AEA3D75-9C71-4667-9F6F-CFF97A5BA68D} = {042378DA-BE8D-4131-824B-7A5A8D8BF55B}
 		{211A58E7-A46F-46D5-AFC9-2AD7FA83C85B} = {042378DA-BE8D-4131-824B-7A5A8D8BF55B}
+		{4B2F8CD0-6ECB-4F5C-BC4B-008BCBAFB23A} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{0D2A0B68-3C18-4458-A568-98E630DB255D} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{3127CCB4-E0A5-404E-9D92-885547B898B3} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{C284E521-2E0D-4B37-AB1C-1ECC685B7C22} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{D2E441E7-C580-4259-9BE7-B3217B9512C8} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{301FA331-E811-49CD-821B-272A0BA9E5FA} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{35577886-2193-429E-8D08-9C5B2AFB572C} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{113507B4-C85C-4FD6-BD40-BD163F0D2078} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{A0625D60-19BF-4C05-B835-DA3E20FB3129} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
+		{E4E46B0F-7E50-4A76-A3BA-5298ED8D07D7} = {BB67788B-7466-47AE-9103-2A3D16045EE4}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1CAAAA6B-3D14-4F77-8A47-C9815BC38DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -82,5 +112,45 @@ Global
 		{211A58E7-A46F-46D5-AFC9-2AD7FA83C85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{211A58E7-A46F-46D5-AFC9-2AD7FA83C85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{211A58E7-A46F-46D5-AFC9-2AD7FA83C85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B2F8CD0-6ECB-4F5C-BC4B-008BCBAFB23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2F8CD0-6ECB-4F5C-BC4B-008BCBAFB23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2F8CD0-6ECB-4F5C-BC4B-008BCBAFB23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2F8CD0-6ECB-4F5C-BC4B-008BCBAFB23A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2A0B68-3C18-4458-A568-98E630DB255D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2A0B68-3C18-4458-A568-98E630DB255D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2A0B68-3C18-4458-A568-98E630DB255D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2A0B68-3C18-4458-A568-98E630DB255D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3127CCB4-E0A5-404E-9D92-885547B898B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3127CCB4-E0A5-404E-9D92-885547B898B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3127CCB4-E0A5-404E-9D92-885547B898B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3127CCB4-E0A5-404E-9D92-885547B898B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C284E521-2E0D-4B37-AB1C-1ECC685B7C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C284E521-2E0D-4B37-AB1C-1ECC685B7C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C284E521-2E0D-4B37-AB1C-1ECC685B7C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C284E521-2E0D-4B37-AB1C-1ECC685B7C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E441E7-C580-4259-9BE7-B3217B9512C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E441E7-C580-4259-9BE7-B3217B9512C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E441E7-C580-4259-9BE7-B3217B9512C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E441E7-C580-4259-9BE7-B3217B9512C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{301FA331-E811-49CD-821B-272A0BA9E5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301FA331-E811-49CD-821B-272A0BA9E5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301FA331-E811-49CD-821B-272A0BA9E5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301FA331-E811-49CD-821B-272A0BA9E5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35577886-2193-429E-8D08-9C5B2AFB572C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35577886-2193-429E-8D08-9C5B2AFB572C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35577886-2193-429E-8D08-9C5B2AFB572C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35577886-2193-429E-8D08-9C5B2AFB572C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113507B4-C85C-4FD6-BD40-BD163F0D2078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113507B4-C85C-4FD6-BD40-BD163F0D2078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113507B4-C85C-4FD6-BD40-BD163F0D2078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113507B4-C85C-4FD6-BD40-BD163F0D2078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0625D60-19BF-4C05-B835-DA3E20FB3129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0625D60-19BF-4C05-B835-DA3E20FB3129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0625D60-19BF-4C05-B835-DA3E20FB3129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0625D60-19BF-4C05-B835-DA3E20FB3129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E46B0F-7E50-4A76-A3BA-5298ED8D07D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E46B0F-7E50-4A76-A3BA-5298ED8D07D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E46B0F-7E50-4A76-A3BA-5298ED8D07D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E46B0F-7E50-4A76-A3BA-5298ED8D07D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
