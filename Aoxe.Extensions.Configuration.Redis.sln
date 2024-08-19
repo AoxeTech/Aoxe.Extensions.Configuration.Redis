@@ -1,8 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{042378DA-BE8D-4131-824B-7A5A8D8BF55B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BB67788B-7466-47AE-9103-2A3D16045EE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.StackExchangeRedis", "src\Aoxe.Extensions.Configuration.StackExchangeRedis\Aoxe.Extensions.Configuration.StackExchangeRedis.csproj", "{1CAAAA6B-3D14-4F77-8A47-C9815BC38DB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1CAAAA6B-3D14-4F77-8A47-C9815BC38DB8} = {042378DA-BE8D-4131-824B-7A5A8D8BF55B}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CAAAA6B-3D14-4F77-8A47-C9815BC38DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CAAAA6B-3D14-4F77-8A47-C9815BC38DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CAAAA6B-3D14-4F77-8A47-C9815BC38DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CAAAA6B-3D14-4F77-8A47-C9815BC38DB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
