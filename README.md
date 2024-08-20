@@ -1,2 +1,2 @@
 # Aoxe.Extensions.Configuration.Redis
-Let the redisa as a configuration source.
+Let the redis as a configuration source.
