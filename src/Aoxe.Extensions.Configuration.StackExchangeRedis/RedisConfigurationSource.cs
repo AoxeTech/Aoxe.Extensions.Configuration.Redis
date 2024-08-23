@@ -10,5 +10,5 @@ public class RedisConfigurationSource(
     public string Key { get; } = key;
 
     public IConfigurationProvider Build(IConfigurationBuilder builder) =>
-        new RedisConfigurationProvider(this, flattener);
+        new RedisConfigurationProvider(this, new RedisDatabaseFactory(this), flattener);
 }
