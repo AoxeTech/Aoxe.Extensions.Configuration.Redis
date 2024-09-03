@@ -1,4 +1,4 @@
-# Aoxe.Extensions.Configuration.StackExchangeRedis
+# Aoxe.Extensions.Configuration.Redis
 
 English | [简体中文](README-zh_CN.md)
 
