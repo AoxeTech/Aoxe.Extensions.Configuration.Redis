@@ -1,8 +1,15 @@
 ﻿namespace Aoxe.Extensions.Configuration.StackExchangeRedis;
 
-public class RedisClientOptions(string configuration)
+public class RedisClientOptions
 {
-    public string Configuration { get; set; } = configuration;
-    public Action<ConfigurationOptions>? Configure { get; set; }
+    public ConfigurationOptions Options { get; set; }
     public TextWriter? Log { get; set; }
+
+    public RedisClientOptions(Func<ConfigurationOptions> optionsFactory) =>
+        Options = optionsFactory();
+
+    public RedisClientOptions(ConfigurationOptions options) => Options = options;
+
+    public RedisClientOptions(string configuration) =>
+        Options = ConfigurationOptions.Parse(configuration);
 }
