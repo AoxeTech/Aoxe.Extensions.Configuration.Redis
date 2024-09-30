@@ -4,7 +4,7 @@
 
 ---
 
-使用 redis 作为配置源, 包括不同的数据源及其对应的解析器 (Json / Xml / Ini / Toml / Yaml).
+使用 redis 作为包含 reload 功能的配置源, 包括不同的数据源及其对应的解析器 (Json / Xml / Ini / Toml / Yaml).
 
 - [Aoxe.Extensions.Configuration](https://github.com/AoxeTech/Aoxe.Extensions.Configuration)
 - [Aoxe.Extensions.Configuration.Consul](https://github.com/AoxeTech/Aoxe.Extensions.Configuration.Consul)

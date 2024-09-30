@@ -4,7 +4,7 @@ English | [简体中文](README-zh_CN.md)
 
 ---
 
-Let the redis as a configuration source, include several configuration sources and several parsers (Json / Xml / Ini / Toml / Yaml).
+Let the redis as a configuration source with reload feature, include several configuration sources and several parsers (Json / Xml / Ini / Toml / Yaml).
 
 - [Aoxe.Extensions.Configuration](https://github.com/AoxeTech/Aoxe.Extensions.Configuration)
 - [Aoxe.Extensions.Configuration.Consul](https://github.com/AoxeTech/Aoxe.Extensions.Configuration.Consul)

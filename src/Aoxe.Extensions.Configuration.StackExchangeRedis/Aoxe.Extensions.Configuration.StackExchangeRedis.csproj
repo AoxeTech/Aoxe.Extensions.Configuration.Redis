@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
-        <PackageVersion>2024.1.5</PackageVersion>
-        <Version>2024.1.5</Version>
+        <TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
+        <PackageVersion>2024.2.2</PackageVersion>
+        <Version>2024.2.2</Version>
         <Description>Let the redis as a configuration source.</Description>
         <PackageTags>Aoxe;Configuration;Redis</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
@@ -30,7 +30,7 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="StackExchange.Redis" Version="2.8.12" />
+        <PackageReference Include="StackExchange.Redis" Version="2.8.16" />
     </ItemGroup>
 
     <ItemGroup>
