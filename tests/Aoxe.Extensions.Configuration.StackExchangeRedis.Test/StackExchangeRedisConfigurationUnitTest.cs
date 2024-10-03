@@ -74,7 +74,5 @@ public class RedisConfigurationUnitTest
         // Assert
         Assert.NotEqual(initialValue, updatedValue);
         Assert.Equal("UpdatedValue", updatedValue);
-
-        await db.KeyDeleteAsync(redisKey);
     }
 }

@@ -5,12 +5,18 @@ public static class RedisConfigurationExtensions
     public static IConfigurationBuilder AddRedisIni(
         this IConfigurationBuilder builder,
         Func<RedisClientOptions> optionsFactory,
-        string key
-    ) => builder.Add(new RedisConfigurationSource(optionsFactory, key, new IniFlattener()));
+        string key,
+        bool reloadOnChange = false
+    ) =>
+        builder.Add(
+            new RedisConfigurationSource(optionsFactory, key, new IniFlattener(), reloadOnChange)
+        );
 
     public static IConfigurationBuilder AddRedisIni(
         this IConfigurationBuilder builder,
         RedisClientOptions options,
-        string key
-    ) => builder.Add(new RedisConfigurationSource(options, key, new IniFlattener()));
+        string key,
+        bool reloadOnChange = false
+    ) =>
+        builder.Add(new RedisConfigurationSource(options, key, new IniFlattener(), reloadOnChange));
 }
