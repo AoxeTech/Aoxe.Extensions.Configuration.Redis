@@ -20,5 +20,5 @@ public class RedisConfigurationSource(
         : this(optionsFactory(), key, flattener, reloadOnChange) { }
 
     public IConfigurationProvider Build(IConfigurationBuilder builder) =>
-        new RedisConfigurationProvider(this, flattener);
+        new RedisConfigurationProvider(this, new RedisConnectionFactory(this), flattener);
 }

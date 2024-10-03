@@ -3,36 +3,44 @@
 public class RedisConfigurationProvider : ConfigurationProvider
 {
     private readonly RedisConfigurationSource _source;
+    private readonly IRedisConnectionFactory _redisConnectionFactory;
     private readonly IFlattener? _flattener;
-    private readonly IConnectionMultiplexer _connectionMultiplexer;
-    private readonly RedisChannel _channel;
 
-    public RedisConfigurationProvider(RedisConfigurationSource source, IFlattener? flattener = null)
+    public RedisConfigurationProvider(
+        RedisConfigurationSource source,
+        IRedisConnectionFactory redisConnectionFactory,
+        IFlattener? flattener = null
+    )
     {
         _source = source;
+        _redisConnectionFactory = redisConnectionFactory;
         _flattener = flattener;
-        _connectionMultiplexer = ConnectionMultiplexer.Connect(
-            source.RedisClientOptions.Options,
-            source.RedisClientOptions.Log
+        if (!_source.ReloadOnChange)
+            return;
+        SubscribeToChanges(
+            new RedisChannel(
+                $"__keyspace@{source.RedisClientOptions.Db}__:{source.Key}",
+                RedisChannel.PatternMode.Auto
+            )
         );
-        _channel = new RedisChannel(source.Key, RedisChannel.PatternMode.Auto); // Use the new constructor
-        if (_source.ReloadOnChange)
-            SubscribeToChanges();
     }
 
-    public sealed override void Load()
+    public override void Load()
     {
-        var value = _connectionMultiplexer.GetDatabase().StringGet(_source.Key);
+        var value = _redisConnectionFactory
+            .GetConnection()
+            .GetDatabase(_source.RedisClientOptions.Db)
+            .StringGet(_source.Key);
         Data = _flattener is null
             ? new Dictionary<string, string?> { { _source.Key, value } }
             : _flattener.Flatten(new MemoryStream(value!));
     }
 
-    private void SubscribeToChanges()
+    private void SubscribeToChanges(RedisChannel channel)
     {
-        var subscriber = _connectionMultiplexer.GetSubscriber();
+        var subscriber = _redisConnectionFactory.GetConnection().GetSubscriber();
         subscriber.Subscribe(
-            _channel,
+            channel,
             (_, _) =>
             {
                 Load(); // Reload configuration on change
