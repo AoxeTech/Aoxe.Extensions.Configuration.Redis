@@ -58,7 +58,7 @@ public class RedisConfigurationUnitTest
 
         // Poll for the updated value
         string? updatedValue = null;
-        var timeout = TimeSpan.FromSeconds(10);
+        var timeout = TimeSpan.FromSeconds(5);
         var startTime = DateTime.UtcNow;
 
         while (DateTime.UtcNow - startTime < timeout)

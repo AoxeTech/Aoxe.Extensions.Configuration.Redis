@@ -9,6 +9,8 @@ public class RedisConnectionFactory(RedisConfigurationSource source)
         ConnectionMultiplexer
     > ConnectionMultiplexers = new();
 
+    private static readonly ConcurrentDictionary<string, Task> ConnectionMultiplexerTasks = new();
+
     public IConnectionMultiplexer GetConnection() =>
         ConnectionMultiplexers.GetOrAdd(
             source.RedisClientOptions,
