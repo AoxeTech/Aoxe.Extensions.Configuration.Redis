@@ -1,0 +1,26 @@
+﻿<Solution>
+  <Folder Name="/src/">
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.IniParser\Aoxe.Extensions.Configuration.StackExchangeRedis.IniParser.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.Ini\Aoxe.Extensions.Configuration.StackExchangeRedis.Ini.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.Json\Aoxe.Extensions.Configuration.StackExchangeRedis.Json.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.NewtonsoftJson\Aoxe.Extensions.Configuration.StackExchangeRedis.NewtonsoftJson.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.SharpYaml\Aoxe.Extensions.Configuration.StackExchangeRedis.SharpYaml.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlet\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlet.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlyn\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlyn.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.Xml\Aoxe.Extensions.Configuration.StackExchangeRedis.Xml.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.StackExchangeRedis\Aoxe.Extensions.Configuration.StackExchangeRedis.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Ini.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Ini.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.IniParser.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.IniParser.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Json.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Json.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.NewtonsoftJson.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.NewtonsoftJson.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.SharpYaml.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.SharpYaml.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlet.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlet.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlyn.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Tomlyn.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.Xml.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.Xml.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet.Test\Aoxe.Extensions.Configuration.StackExchangeRedis.YamlDotNet.Test.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>
