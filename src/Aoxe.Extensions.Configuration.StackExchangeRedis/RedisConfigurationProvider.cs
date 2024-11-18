@@ -2,9 +2,6 @@
 
 public class RedisConfigurationProvider : ConfigurationProvider
 {
-    private readonly CancellationTokenSource _cancellationTokenSource;
-    private Task? _pollTask;
-    private bool _disposed;
     private readonly RedisConfigurationSource _source;
     private readonly IRedisConnectionFactory _redisConnectionFactory;
     private readonly IFlattener? _flattener;
@@ -43,19 +40,6 @@ public class RedisConfigurationProvider : ConfigurationProvider
     {
         var subscriber = _redisConnectionFactory.GetConnection().GetSubscriber();
         subscriber.Subscribe(
-            channel,
-            (_, _) =>
-            {
-                Load(); // Reload configuration on change
-                OnReload(); // Notify that the configuration has changed
-            }
-        );
-    }
-
-    private async Task SubscribeToChangesAsync(RedisChannel channel)
-    {
-        var subscriber = _redisConnectionFactory.GetConnection().GetSubscriber();
-        await subscriber.SubscribeAsync(
             channel,
             (_, _) =>
             {
